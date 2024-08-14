@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Interactive pricing component</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="pricing-container">
+			<div class="title">
+				<h2>Simple, traffic-based pricing</h2>
+				<p>Sign-up for our 30-day trial. No credit card required.</p>
+			</div>
+
+			<div class="pricing">
+				<div class="pageviews">
+					<p class="pageviews-total">
+						<span class="pageview-number" id="pageview-number"> </span>
+						PAGEVIEWS
+					</p>
+
+					<p class="pageviews-per-month">
+						<span class="per-month" id="per-month-price"></span> / month
+					</p>
+				</div>
+
+				<div class="slide-container">
+					<input
+						type="range"
+						min="20"
+						max="100"
+						value="60"
+						class="slider-range"
+						id="my-slider-range"
+						step="20"
+					/>
+				</div>
+
+				<div class="slider-billing">
+					<p>Monthly Billing</p>
+					<div class="slider-date" id="slider-date">
+						<div class="circle" id="slider-circle"></div>
+					</div>
+					<p>Yearly Billing</p>
+					<span class="discount hidden" id="discount-span">25% discount</span>
+				</div>
+
+				<div class="pricing-info">
+					<div class="benefits">
+						<p>
+							<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1"
+								/>
+							</svg>
+							Unlimited websides
+						</p>
+						<p>
+							<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1"
+								/>
+							</svg>
+							100% data ownership
+						</p>
+						<p>
+							<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+								<path
+									fill="none"
+									stroke="#10D8C4"
+									stroke-width="2"
+									d="M1 4.134l1.907 1.908L7.949 1"
+								/>
+							</svg>
+							Email reports
+						</p>
+					</div>
+					<div class="start-trail">
+						<button class="start-btn" id="start-btn">Start my trail</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script defer src="main.js"></script>
+	</body>
+</html>
