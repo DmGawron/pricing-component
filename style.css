@@ -36,7 +36,7 @@ body {
 }
 
 .title {
-	background: url("/images/pattern-circles.svg");
+	background: url("./images/pattern-circles.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
